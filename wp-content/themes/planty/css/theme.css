@@ -7,6 +7,10 @@ body *, .uk-navbar-nav li a {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Header */
 
 .uk-block {
@@ -42,7 +46,26 @@ body *, .uk-navbar-nav li a {
     font-size: 16px;
 }
 
-.uk-navbar-nav li:nth-child(3) a {
+.uk-navbar-nav li:last-child a {
     background: #DC9F96;
     color: white;
+}
+
+.uk-navbar-nav li:last-child a:hover {
+    background-color: #C02E44;
+}
+
+
+/* Footer */
+
+#menu-footer {
+    text-align: center;
+    list-style: none;
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#menu-footer a {
+    color: black;
 }
