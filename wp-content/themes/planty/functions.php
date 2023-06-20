@@ -18,8 +18,6 @@ function beans_child_enqueue_assets() {
 // ===============
 
 // Hook pour afficher le lien "admin" si utilisateur connecté
-add_action( 'beans_header_prepend_markup', 'header_link_admin' );
-
 function header_link_admin() {
 
 	if ( !is_user_logged_in()) {
@@ -29,18 +27,23 @@ function header_link_admin() {
 	} else {
 		beans_add_attribute( 'beans_menu_item_link[_24]', 'href', admin_url() );
 	}
+
 }
 
-// Hook pour modifier le Footer
-add_action( 'beans_footer_prepend_markup', 'modify_footer' );
+add_action( 'beans_header_prepend_markup', 'header_link_admin' );
 
+
+
+// Hook pour modifier le Footer
 function modify_footer() {
 
-	beans_add_attribute( 'beans_footer_credit_left', 'class', 'hidden' );
-	beans_add_attribute( 'beans_footer_credit_right', 'class', 'hidden' );
+	beans_remove_action( 'beans_footer_content');
 	wp_nav_menu( array(
 		'menu'   => 'Footer',
 		) 
 	);
 
 }
+
+add_action( 'beans_footer_prepend_markup', 'modify_footer' );
+
