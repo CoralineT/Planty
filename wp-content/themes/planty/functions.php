@@ -18,23 +18,23 @@ function beans_child_enqueue_assets() {
 // ===============
 
 // Hook pour afficher le lien "admin" si utilisateur connecté
-function header_link_admin() {
+add_filter( 'wp_nav_menu_items', 'header_link_admin', 10, 2 );
 
-	if ( !is_user_logged_in()) {
+function header_link_admin( $items, $args) {
 
-		beans_add_attribute( 'beans_menu_item[_24]', 'class', 'hidden' );
-		
-	} else {
-		beans_add_attribute( 'beans_menu_item_link[_24]', 'href', admin_url() );
+	if ( is_user_logged_in()  && $args->menu->term_id == 2 ) {
+
+		$items .= ' <li id="link-admin"><a href=" ' . admin_url() . ' ">Admin</a></li> ';
+
 	}
-
+	
+	return $items;
 }
-
-add_action( 'beans_header_prepend_markup', 'header_link_admin' );
-
 
 
 // Hook pour modifier le Footer
+add_action( 'beans_footer_prepend_markup', 'modify_footer' );
+
 function modify_footer() {
 
 	beans_remove_action( 'beans_footer_content');
@@ -45,5 +45,4 @@ function modify_footer() {
 
 }
 
-add_action( 'beans_footer_prepend_markup', 'modify_footer' );
 
