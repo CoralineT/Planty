@@ -2,13 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 
-body *, .uk-navbar-nav li a {
+body * {
     font-family: 'Syne', sans-serif;
     width: 100%;
-}
-
-.hidden {
-    display: none;
 }
 
 /* Header */
@@ -17,11 +13,16 @@ body *, .uk-navbar-nav li a {
     padding: 0 0;
 }
 
+.tm-header {
+    border-bottom: none;
+}
+
 .uk-container {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     padding: 0 0;
+    margin-bottom: none;
 }
 
 .tm-site-branding {
@@ -37,6 +38,8 @@ body *, .uk-navbar-nav li a {
 
 .uk-navbar-nav li {
     width: fit-content;
+    display: flex;
+    align-items: center;
 }
 
 .uk-navbar-nav li:nth-child(1) {
@@ -56,6 +59,7 @@ body *, .uk-navbar-nav li a {
     width: fit-content;
     height: 100%;
     font-size: 16px;
+    
 }
 
 .uk-navbar-nav li:nth-child(2) a {
@@ -63,12 +67,16 @@ body *, .uk-navbar-nav li a {
     color: white;
 }
 
-.uk-navbar-nav li:last-child a:hover {
+.uk-navbar-nav li:nth-child(2) a:hover {
     background-color: #C02E44;
 }
 
 
 /* Footer */
+
+.tm-footer {
+    border-top: none;
+}
 
 #menu-footer {
     text-align: center;
@@ -80,4 +88,13 @@ body *, .uk-navbar-nav li a {
 
 #menu-footer a {
     color: black;
+}
+
+
+/* Main */
+
+.uk-container-center {
+    margin-left: none;
+    margin-right: none;
+    width: 100%;
 }
