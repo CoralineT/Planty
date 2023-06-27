@@ -98,3 +98,36 @@ body * {
     margin-right: none;
     width: 100%;
 }
+
+
+/* Formulaire de contact */
+
+#wpforms-form-142 {
+    padding-left: 100px;
+}
+
+#wpforms-142-field_0, #wpforms-142-field_1, #wpforms-142-field_2 {
+    border: none;
+}
+
+#wpforms-142-field_2-container {
+    background-image: url(../images/Group\ 16.png);
+    background-repeat: no-repeat;
+}
+
+/* Bouton */
+#wpforms-submit-142 {
+    font-family: 'syne';
+    background-color: #DC9F96;
+    padding: 10px 40px;
+}
+
+#wpforms-submit-142:hover {
+    background-color: #C02E44;
+}
+
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
