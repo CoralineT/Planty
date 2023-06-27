@@ -17,12 +17,20 @@ body * {
     border-bottom: none;
 }
 
+.uk-grid {
+    margin: 0;
+}
+
+.uk-grid > * {
+    padding: 0;
+}
+
 .uk-container {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     padding: 0 0;
-    margin-bottom: none;
+    margin-bottom: 0;
 }
 
 .tm-site-branding {
@@ -59,7 +67,7 @@ body * {
     width: fit-content;
     height: 100%;
     font-size: 16px;
-    
+    line-height: 50px;
 }
 
 .uk-navbar-nav li:nth-child(2) a {
@@ -70,6 +78,7 @@ body * {
 .uk-navbar-nav li:nth-child(2) a:hover {
     background-color: #C02E44;
 }
+
 
 
 /* Footer */
@@ -94,8 +103,8 @@ body * {
 /* Main */
 
 .uk-container-center {
-    margin-left: none;
-    margin-right: none;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
 }
 
@@ -107,19 +116,33 @@ body * {
     background-repeat: no-repeat;
 }
 
+
 .wpcf7-form:last-child p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .wpcf7-submit {
     border: none;
     background-color: #DC9F96;
-    padding: 10px 40px;
-    width: 30%;
+    padding: 15px 40px;
+    width: 40%;
+}
+
+.uk-form input[type="submit"] {
+    border-radius: 8px;
 }
 
 .wpcf7-submit:hover {
     background-color: #C02E44;
+}
+
+/* Images fruits */
+
+.inner-block a {
+    width: 60%;
+    line-height: 60px;
+    overflow-wrap: break-word;
 }
