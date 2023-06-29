@@ -161,3 +161,57 @@ body * {
     filter: drop-shadow(0px -3px 0px #e3d9d0);
     padding-top: 10px;
 }
+
+
+/* Formulaire page commander */
+
+#wpcf7-f294-p16-o1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-form {
+    display: flex;
+}
+
+.section-form h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.div-informations, .div-livraison {
+    margin: 40px 30px;
+    color: white;
+}
+
+.div-livraison {
+    border-left: 1px solid white;
+    padding-left: 50px;
+}
+
+.uk-form input:not([type="input"]):not([type="checkbox"]), .uk-form select {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#wpcf7-f294-p16-o5 input[type="submit"] {
+    width: 20%;
+    padding: 20px 0;
+}
+
+
+/* Formulaire quantité */
+
+.section-form-quantite {
+    display: flex;
+    align-items: flex-start;
+}
+
+.div-plus-minus p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
