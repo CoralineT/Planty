@@ -7,6 +7,10 @@ body * {
     width: 100%;
 }
 
+.tm-main {
+    background-color: #ffffff;
+}
+
 /* Header */
 
 .uk-block {
@@ -109,13 +113,19 @@ body * {
 }
 
 
-/* Formulaire de contact */
+/* Formulaire de contact page d'accueil */
 
-.wpcf7-form{
+#wpcf7-f202-p14-o1 {
     background-image: url(../images/Group\ 16.png);
     background-repeat: no-repeat;
+    background-position: 3% 94%;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: content-box;
+}
 
 .wpcf7-form:last-child p {
     display: flex;
@@ -131,6 +141,11 @@ body * {
     width: 40%;
 }
 
+.uk-form input, .uk-form select, .uk-form textarea {
+    font-family: 'Syne', sans-serif;
+    color: white;
+}
+
 .uk-form input[type="submit"] {
     border-radius: 8px;
 }
@@ -139,10 +154,10 @@ body * {
     background-color: #C02E44;
 }
 
-/* Images fruits */
 
-.inner-block a {
-    width: 60%;
-    line-height: 60px;
-    overflow-wrap: break-word;
+/* Bordure page d'accueil */
+
+.elementor-36 .elementor-element.elementor-element-1e075b7 > .elementor-shape-bottom svg {
+    filter: drop-shadow(0px -3px 0px #e3d9d0);
+    padding-top: 10px;
 }
