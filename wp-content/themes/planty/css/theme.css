@@ -132,21 +132,15 @@ body * {
 #wpcf7-f202-p14-o1 {
     background-image: url(../images/Group\ 16.png);
     background-repeat: no-repeat;
-    background-position: 3% 94%;
-    padding-left: 100px;
-    padding-right: 100px;
+    background-position: -7% 82%;
+    padding-left: 53px;
 }
 
-.elementor *, .elementor :after, .elementor :before {
-    box-sizing: content-box;
+.uk-form input, .uk-form select, .uk-form textarea {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.wpcf7-form:last-child p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .wpcf7-submit {
     border: none;
@@ -168,6 +162,11 @@ body * {
     background-color: #C02E44;
 }
 
+.form-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Formulaire page commander */
 
@@ -179,11 +178,13 @@ body * {
 
 .section-form {
     display: flex;
+    width: 100%;
+    margin: auto;
 }
 
 .section-form h2 {
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -201,6 +202,8 @@ body * {
 .uk-form input:not([type="input"]):not([type="checkbox"]), .uk-form select {
     margin-top: 15px;
     margin-bottom: 20px;
+    padding: 33px 0;
+    border-radius: 8px;
 }
 
 #wpcf7-f294-p16-o5 input[type="submit"] {
