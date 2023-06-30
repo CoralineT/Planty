@@ -112,6 +112,20 @@ body * {
     width: 100%;
 }
 
+.elementor-36 .elementor-element.elementor-element-8f791cf > .elementor-widget-container {
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* Bordure Page d'accueil */
+.elementor-36 .elementor-element.elementor-element-b803c28 {
+    height: 40px;
+    width: 100%;
+    background-color: #ECE2DA;
+    border-radius: 0 0 60% 60%;
+    box-shadow: 0 10px 0 #e3d9d0;
+}
+
 
 /* Formulaire de contact page d'accueil */
 
@@ -152,14 +166,6 @@ body * {
 
 .wpcf7-submit:hover {
     background-color: #C02E44;
-}
-
-
-/* Bordure page d'accueil */
-
-.elementor-36 .elementor-element.elementor-element-1e075b7 > .elementor-shape-bottom svg {
-    filter: drop-shadow(0px -3px 0px #e3d9d0);
-    padding-top: 10px;
 }
 
 
