@@ -116,6 +116,16 @@ body * {
     padding: 0px 0px 0px 0px;
 }
 
+/* Page d'accueil */
+.elementor-column.elementor-col-50, .elementor-column[data-col="50"] {
+    width: 426px;
+    height: 276px;
+    margin: 2%;
+}
+
+.elementor-container {
+    justify-content: center;
+}
 
 /* Bordure Page d'accueil */
 .elementor-36 .elementor-element.elementor-element-b803c28 {
@@ -219,8 +229,39 @@ body * {
     align-items: flex-start;
 }
 
-.div-plus-minus p {
+.div-plus-minus {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.btn-incrementation-plus, .btn-incrementation-minus {
+    background-color: #DC9F96;
+    color: white;
+    width: fit-content;
+    padding: 10px 15px;
+    border-style: none;
+}
+
+.btn-incrementation-plus {
+    border-radius: 0 6px 0 0;
+    border-bottom: 1px solid white;
+}
+
+.btn-incrementation-minus {
+    border-radius: 0 0 6px 0;
+}
+
+.btn-ok-quantite {
+    background-color: #DC9F96;
+    border-style: none;
+}
+
+.wpcf7-validates-as-number {
+    margin: 0;
+}
+
+input.input-number {
+    border-radius: 6px 0 0 6px;
+    margin: 0;
 }
