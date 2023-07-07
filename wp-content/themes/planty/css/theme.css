@@ -181,7 +181,6 @@ body * {
 /* Formulaire page commander */
 
 #wpcf7-f294-p16-o1 {
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -190,13 +189,18 @@ body * {
     display: flex;
     width: 100%;
     margin: auto;
+    margin-top: 20px;
 }
 
-.section-form h2 {
+.section-form h2, .section-form-quantite h2 {
     color: white;
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 30px;
+}
+
+.section-form-quantite h2 {
+    margin: 33px 0px 48px 34px;
 }
 
 .div-informations, .div-livraison {
@@ -216,45 +220,51 @@ body * {
     border-radius: 8px;
 }
 
+.uk-form input[type="number"] {
+    margin-right: 7%;
+}
+
 #wpcf7-f294-p16-o5 input[type="submit"] {
     width: 20%;
     padding: 20px 0;
 }
 
-
 /* Formulaire quantité */
 
 .section-form-quantite {
     display: flex;
-    align-items: flex-start;
-}
-
-.div-plus-minus {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
-.btn-incrementation-plus, .btn-incrementation-minus {
-    background-color: #DC9F96;
-    color: white;
-    width: fit-content;
-    padding: 10px 15px;
-    border-style: none;
-}
-
-.btn-incrementation-plus {
-    border-radius: 0 6px 0 0;
+.div-quantite {
+    display: flex;
     border-bottom: 1px solid white;
 }
 
-.btn-incrementation-minus {
-    border-radius: 0 0 6px 0;
+.div-produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-produit img {
+    width: 76%;
+}
+
+.div-boutons-commander {
+    display: flex;
+    width: 76%;
+    height: 41%;
+    line-height: 0%;
 }
 
 .btn-ok-quantite {
     background-color: #DC9F96;
     border-style: none;
+}
+
+.btn-ok-quantite:hover {
+    background-color: #C02E44;
 }
 
 .wpcf7-validates-as-number {
@@ -264,4 +274,16 @@ body * {
 .input-number {
     border-radius: 6px 0 0 6px;
     margin: 0;
+    width: 69%;
+    margin-right: 7%;
 }
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    transform: rotate(90deg);
+    background-color: #C02E44;
+    width: 50%;
+    height: 80px;
+    content: "+";
+  }
