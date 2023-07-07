@@ -154,7 +154,7 @@ body * {
 
 .wpcf7-submit {
     border: none;
-    background-color: #DC9F96;
+    background-color: #E0B9B4;
     padding: 15px 40px;
     width: 40%;
 }
@@ -259,7 +259,7 @@ body * {
 }
 
 .btn-ok-quantite {
-    background-color: #DC9F96;
+    background-color: #E0B9B4;
     border-style: none;
 }
 
@@ -274,16 +274,145 @@ body * {
 .input-number {
     border-radius: 6px 0 0 6px;
     margin: 0;
-    width: 69%;
+    width: 75%;
     margin-right: 7%;
 }
 
-input[type=number]::-webkit-inner-spin-button {
+input[type=number] {
+    font-size: 60px;
+    outline: none;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-    transform: rotate(90deg);
-    background-color: #C02E44;
+    background-color: #DC9F96;
+    ;
     width: 50%;
-    height: 80px;
+    height: 100%;
+    opacity: 5;
+}
+
+input[type=number]::-webkit-outer-spin-button {
     content: "+";
+    border: 1px solid black;
+}
+
+.number-wrapper {
+    position: relative;
+}
+
+.number-wrapper::after,
+.number-wrapper::before {
+    position: absolute;
+    pointer-events: none;
+}
+
+.number-wrapper:after {
+    top: 30%;
+    right: 38%;
+    color: white;
+    content: "+";
+    font-size: 30px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+  }
+
+  .number-wrapper::before {
+    top: 62%;
+    left: 50%;
+    color: white;
+    content: "-";
+    font-size: 30px;
+  }
+
+  @media screen  and (max-width: 1024px ) {
+
+    /* Header */
+    .uk-hidden-large {
+        text-align: end;
+        padding-right: 25px;
+        background: white;
+    }
+
+    .uk-margin-small-right {
+        font-size: 37px;
+        margin-top: 10px;
+    }
+
+    .tm-site-branding {
+        width: 52%;
+    }
+
+    /* Page "commander" */
+
+    .section-form-quantite h2 {
+        margin-left: 53px;
+    }
+    
+    .div-quantite {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .div-produit {
+        margin-bottom: 20px;
+    }
+
+    .number-wrapper:before {
+        left: 55%;
+    }
+
+  }
+
+  @media  screen and (max-width: 768px) {
+
+    /* Header */
+
+    .uk-margin-small-right {
+        font-size: 26px;
+        margin-top: 6px;
+    }
+
+    .tm-site-branding {
+        width: 145%;
+    }
+    
+    /* Page "commander" */
+
+    .section-form-quantite h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .div-quantite {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-produit {
+        margin-bottom: 30px;
+    }
+
+    .number-wrapper:before {
+        left: 55%;
+    }
+
+    .section-form {
+        flex-direction: column;
+        width: 78%;
+        align-items: center;
+    }
+
+    .section-form h2 {
+        text-align: center;
+    }
+
+    .div-livraison {
+        border: none;
+        padding-left: 0;
+    }
+
   }
