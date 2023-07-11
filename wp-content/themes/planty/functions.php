@@ -53,4 +53,4 @@ beans_remove_action( 'beans_breadcrumb' );
 // Enelver les balises <p> des formulaires
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
-?>
+

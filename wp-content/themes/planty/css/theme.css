@@ -137,10 +137,10 @@ body * {
 }
 
 
-/* Formulaire de contact page d'accueil */
+/* Formulaire de contact page "nous rencontrer" */
 
 #wpcf7-f202-p14-o1 {
-    background-image: url(../images/Group\ 16.png);
+    background-image: url(../images/Group16.png);
     background-repeat: no-repeat;
     background-position: -7% 82%;
     padding-left: 53px;
@@ -151,21 +151,16 @@ body * {
     margin-bottom: 30px;
 }
 
-
-.wpcf7-submit {
-    border: none;
-    background-color: #E0B9B4;
-    padding: 15px 40px;
-    width: 40%;
-}
-
 .uk-form input, .uk-form select, .uk-form textarea {
     font-family: 'Syne', sans-serif;
     color: white;
 }
 
-.uk-form input[type="submit"] {
-    border-radius: 8px;
+#wpcf7-f202-p14-o1 .wpcf7-submit {
+    border: none;
+    background-color: #E0B9B4;
+    padding: 15px 40px;
+    width: 40%;
 }
 
 .wpcf7-submit:hover {
@@ -224,9 +219,11 @@ body * {
     margin-right: 7%;
 }
 
-#wpcf7-f294-p16-o5 input[type="submit"] {
+#wpcf7-f294-p16-o1 .wpcf7-submit {
     width: 20%;
     padding: 20px 0;
+    border: none;
+    background-color: #E0B9B4;
 }
 
 /* Formulaire quantité */
@@ -282,6 +279,7 @@ input[type=number] {
     font-size: 60px;
     outline: none;
     text-align: center;
+    width: 89%;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -289,8 +287,7 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
     background-color: #DC9F96;
-    ;
-    width: 50%;
+    width: 45%;
     height: 100%;
     opacity: 5;
 }
@@ -311,8 +308,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .number-wrapper:after {
+    width: 41%;
     top: 30%;
-    right: 38%;
+    right: 11%;
+    text-align: center;
     color: white;
     content: "+";
     font-size: 30px;
@@ -322,7 +321,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   .number-wrapper::before {
     top: 62%;
-    left: 50%;
+    left: 62%;
     color: white;
     content: "-";
     font-size: 30px;
@@ -362,12 +361,17 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .number-wrapper:before {
-        left: 55%;
+        left: 64%;
+    }
+
+    .btn-ok-quantite {
+        width: 78%;
     }
 
   }
 
-  @media  screen and (max-width: 768px) {
+
+  @media  screen and (max-width: 760px) {
 
     /* Header */
 
@@ -378,6 +382,16 @@ input[type=number]::-webkit-outer-spin-button {
 
     .tm-site-branding {
         width: 145%;
+    }
+
+    /* Page "nous rencontrer" */
+
+    #wpcf7-f202-p14-o1 {
+        padding-right: 49px;
+    }
+
+    #wpcf7-f202-p14-o1 .wpcf7-submit {
+        width: 68%;
     }
     
     /* Page "commander" */
@@ -396,8 +410,12 @@ input[type=number]::-webkit-outer-spin-button {
         margin-bottom: 30px;
     }
 
+    .number-wrapper {
+        width: 75%;
+    }
+
     .number-wrapper:before {
-        left: 55%;
+        left: 63%;
     }
 
     .section-form {
@@ -413,6 +431,10 @@ input[type=number]::-webkit-outer-spin-button {
     .div-livraison {
         border: none;
         padding-left: 0;
+    }
+
+    #wpcf7-f294-p16-o1 .wpcf7-submit {
+        width: 48%;
     }
 
   }
