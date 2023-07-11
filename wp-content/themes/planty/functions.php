@@ -47,7 +47,6 @@ function modify_footer() {
 
 
 // Modification des pages : enlever les colonnes pour un layout 100%
-
 beans_remove_action( 'beans_breadcrumb' );
 
 // Enelver les balises <p> des formulaires

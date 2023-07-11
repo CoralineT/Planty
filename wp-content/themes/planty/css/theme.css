@@ -103,6 +103,9 @@ body * {
     color: black;
 }
 
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 0px;
+}
 
 /* Main */
 
@@ -128,7 +131,7 @@ body * {
 }
 
 /* Bordure Page d'accueil */
-.elementor-36 .elementor-element.elementor-element-b803c28 {
+.border-accueil {
     height: 40px;
     width: 100%;
     background-color: #ECE2DA;
