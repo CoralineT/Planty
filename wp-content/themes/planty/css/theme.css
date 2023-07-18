@@ -130,6 +130,11 @@ body * {
     justify-content: center;
 }
 
+.elementor-36 .elementor-element.elementor-element-1de2190 img {
+    width: 100%;
+    max-width: 100%;
+}
+
 /* Bordure Page d'accueil */
 .border-accueil {
     height: 40px;
@@ -139,6 +144,16 @@ body * {
     box-shadow: 0 10px 0 #e3d9d0;
 }
 
+/* Page "nous rencontrer */
+
+.elementor-14 .elementor-element.elementor-element-a4986ba img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.elementor-14 .elementor-element.elementor-element-8546fff > .elementor-widget-container {
+    width: fit-content;
+}
 
 /* Formulaire de contact page "nous rencontrer" */
 
@@ -199,6 +214,7 @@ body * {
 
 .section-form-quantite h2 {
     margin: 33px 0px 48px 34px;
+    width: fit-content;
 }
 
 .div-informations, .div-livraison {
@@ -220,6 +236,7 @@ body * {
 
 .uk-form input[type="number"] {
     margin-right: 7%;
+    font-size: 33px;
 }
 
 #wpcf7-f294-p16-o1 .wpcf7-submit {
@@ -227,6 +244,10 @@ body * {
     padding: 20px 0;
     border: none;
     background-color: #E0B9B4;
+}
+
+#wpcf7-f294-p16-o1 .wpcf7-submit:hover {
+    background-color: #C02E44;
 }
 
 /* Formulaire quantité */
@@ -276,28 +297,24 @@ body * {
     margin: 0;
     width: 75%;
     margin-right: 7%;
+    font-size: 33px;
 }
 
 input[type=number] {
-    font-size: 60px;
     outline: none;
     text-align: center;
     width: 89%;
 }
 
+
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-    background-color: #DC9F96;
     width: 45%;
     height: 100%;
     opacity: 5;
-}
-
-input[type=number]::-webkit-outer-spin-button {
-    content: "+";
-    border: 1px solid black;
 }
 
 .number-wrapper {
@@ -308,26 +325,32 @@ input[type=number]::-webkit-outer-spin-button {
 .number-wrapper::before {
     position: absolute;
     pointer-events: none;
+    background-color: #DC9F96;
 }
 
 .number-wrapper:after {
-    width: 41%;
-    top: 30%;
+    width: 42%;
+    top: 15%;
     right: 11%;
     text-align: center;
     color: white;
     content: "+";
     font-size: 30px;
     border-bottom: 1px solid white;
-    padding-bottom: 20px;
+    padding: 17px 17px;
+    border-top-right-radius: 6px;
   }
 
   .number-wrapper::before {
-    top: 62%;
-    left: 62%;
+    width: 42%;
+    top: 45.5%;
+    left: 47%;
     color: white;
     content: "-";
+    text-align: center;
     font-size: 30px;
+    padding: 18px 17px;
+    border-bottom-right-radius: 6px;
   }
 
   @media screen  and (max-width: 1024px ) {
@@ -350,10 +373,14 @@ input[type=number]::-webkit-outer-spin-button {
 
     /* Page "commander" */
 
+    .section-form h2, .section-form-quantite h2 {
+        font-size: 30px;
+    }
+
     .section-form-quantite h2 {
         margin-left: 53px;
     }
-    
+
     .div-quantite {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -361,10 +388,6 @@ input[type=number]::-webkit-outer-spin-button {
 
     .div-produit {
         margin-bottom: 20px;
-    }
-
-    .number-wrapper:before {
-        left: 64%;
     }
 
     .btn-ok-quantite {
@@ -396,7 +419,7 @@ input[type=number]::-webkit-outer-spin-button {
     #wpcf7-f202-p14-o1 .wpcf7-submit {
         width: 68%;
     }
-    
+
     /* Page "commander" */
 
     .section-form-quantite h2 {
@@ -417,10 +440,6 @@ input[type=number]::-webkit-outer-spin-button {
         width: 75%;
     }
 
-    .number-wrapper:before {
-        left: 63%;
-    }
-
     .section-form {
         flex-direction: column;
         width: 78%;
@@ -429,6 +448,10 @@ input[type=number]::-webkit-outer-spin-button {
 
     .section-form h2 {
         text-align: center;
+    }
+
+    .section-form-quantite h2 {
+        font-size: 33px;
     }
 
     .div-livraison {
